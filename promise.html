@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Practice Promise</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <p>Hi</p>
     <!-- <script>
         const P = new Promise((resolve, reject) => {
@@ -106,69 +107,69 @@
         console.log(calclat(3, 10)); -->
 
     <script>
-      //関数の中のthisの指す向き
-      // var name = 'Check This';
+        //関数の中のthisの指す向き
+        // var name = 'Check This';
 
-      // var oya = function () {
-      //     console.log(this.name);
-      // }
+        // var oya = function () {
+        //     console.log(this.name);
+        // }
 
-      // var F = {
-      //     name: 'nameF',
-      //     oya: oya,
-      // }
-      // F.oya();//nameF
-      // oya();//Check This
+        // var F = {
+        //     name: 'nameF',
+        //     oya: oya,
+        // }
+        // F.oya();//nameF
+        // oya();//Check This
 
-      // const suzu = 'suzuki';
-      // this.suzu = 'suzuki';
+        // const suzu = 'suzuki';
+        // this.suzu = 'suzuki';
 
-      // const satoshi = () => {
-      //     console.log(this.suzu);
-      // }
+        // const satoshi = () => {
+        //     console.log(this.suzu);
+        // }
 
-      // const S = {
-      //     suzu: 'SUZUKI',
-      //     satoshi: satoshi,
-      // }
+        // const S = {
+        //     suzu: 'SUZUKI',
+        //     satoshi: satoshi,
+        // }
 
-      // S.satoshi(); //suzuki
-      // satoshi(); //suzuki
+        // S.satoshi(); //suzuki
+        // satoshi(); //suzuki
 
-      //   this.name = "tachsan";
+        //   this.name = "tachsan";
 
-      //   const ryo = function() {
-      //     return this.name;
-      //   };
-      //   //   ryo();
-      //     const yasu = {
-      //       name: "syoyo"
-      //     };
-      //   console.log(ryo.apply(yasu), "apply");
-      //   console.log(ryo.call(yasu), "call");
-      // console.log(ryo.bind(yasu), "bind");
+        //   const ryo = function() {
+        //     return this.name;
+        //   };
+        //   //   ryo();
+        //     const yasu = {
+        //       name: "syoyo"
+        //     };
+        //   console.log(ryo.apply(yasu), "apply");
+        //   console.log(ryo.call(yasu), "call");
+        // console.log(ryo.bind(yasu), "bind");
 
-      //   const yuma = () => {
-      //     return this.god;
-      //   };
+        //   const yuma = () => {
+        //     return this.god;
+        //   };
 
-      //   const G = {
-      //     god: "Oyaidu",
-      //     yuma: yuma
-      //   };
-      //   console.log(G.yuma());
-      //   console.log(yuma.apply(G));
-      //   const E = new Promise((resolve, reject) => {
-      //     setTimeout(function() {
-      //       console.log("Promise");
-      //       resolve();
-      //     }, 1000);
-      //   });
-      //   E.then(() => {
-      //     console.log("Success");
-      //   }).catch(() => {
-      //     console.log("Failed");
-      //   });
+        //   const G = {
+        //     god: "Oyaidu",
+        //     yuma: yuma
+        //   };
+        //   console.log(G.yuma());
+        //   console.log(yuma.apply(G));
+        //   const E = new Promise((resolve, reject) => {
+        //     setTimeout(function() {
+        //       console.log("Promise");
+        //       resolve();
+        //     }, 1000);
+        //   });
+        //   E.then(() => {
+        //     console.log("Success");
+        //   }).catch(() => {
+        //     console.log("Failed");
+        //   });
 
         // function calculateAge(birthYear) {
         //     return 2018 - birthYear;
@@ -206,7 +207,27 @@
 
         // console.log(whatDoYouDo('teacher', 'Jonh'));
 
-      yearsUntilRetirement(1990, "John");
+        //チップを計算する関数を作成してarrayに突っ込んでいく
+        // var allTips = [];
+        // var tip;
+        // var tipCalc = function (bill) {
+        //     if (bill < 50) {
+        //         tip = bill * 0.2;
+        //         allTips.push(tip);
+        //     } else if (50 <= bill && bill <= 200) {
+        //         tip = bill * 0.15;
+        //         allTips.push(tip);
+        //     } else if (bill > 200) {
+        //         tip = bill * 0.1;
+        //         allTips.push(tip);
+        //     }
+        // }
+
+        // tipCalc(124);
+        // tipCalc(299);
+        // tipCalc(180);
+        // console.log(allTips);
     </script>
-  </body>
+</body>
+
 </html>

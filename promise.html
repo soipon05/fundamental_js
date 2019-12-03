@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Practice Promise</title>
+  </head>
+
+  <body>
+    <p>Hi</p>
+    <!-- <script>
+        const P = new Promise((resolve, reject) => {
+            setTimeout(function () {
+                console.log('Hi');
+                let num = Math.random() * 10;
+                if (Math.floor(num) % 2) {
+                    console.log(num);
+                    resolve('奇数');
+                } else {
+                    console.log(num);
+                    reject('偶数');
+                }
+            }, 1000);
+        });
+        console.log('Hi?');
+        P.then((value) => {
+            console.log(value)
+        }).catch((value) => {
+            console.log(value);
+        });
+
+        const E = new Promise((resolve, reject) => {
+            setTimeout(function() {
+                console.log('Promise');
+            }, 1000);
+        });
+
+        E.then((value) => {
+            console.log('Success');
+        }).catch((value) => {
+            console.log('Failed');
+        });
+    </script>
+    <script>
+        // ES5
+        if (true) {
+            var num = 'test';
+        }
+
+        console.log(num);
+
+        // ES6 ちゃんと出る
+        let iwa = 'iwa';
+        if (true) {
+            iwa = 'iwamura';
+        }
+
+        console.log(iwa);
+
+        // ES6 ちゃんと出ない
+        // if (true) {
+        //     let yasu = 'yasuda';
+        // }
+
+        // console.log(yasu);
+
+
+        // ES6 再代入はできないようになっている
+        // const A = {
+        //     name: 'nameA',
+        //     name1: 'name1'
+        // }
+
+        // A = 'nameeeee';
+        // console.log(A.name);
+
+
+        // スプレッド演算子
+        const A = [1, 2, 3];
+        const B = [...A, 4, 5, 6];
+
+        console.log(B);
+
+        const C = {
+            name1: 'name1',
+            name2: 'name2',
+        }
+
+        const D = {
+            ...C,
+            name2: 'name222',
+            name3: 'name3'
+        }
+
+        console.log(D);
+
+
+        const func = () => {
+            console.log('Hi Arrow')
+        };
+        func();
+
+
+        const calclat = (a = 2, b = 3) => a + b;
+        console.log(calclat(3, 10)); -->
+
+    <script>
+      //関数の中のthisの指す向き
+      // var name = 'Check This';
+
+      // var oya = function () {
+      //     console.log(this.name);
+      // }
+
+      // var F = {
+      //     name: 'nameF',
+      //     oya: oya,
+      // }
+      // F.oya();//nameF
+      // oya();//Check This
+
+      // const suzu = 'suzuki';
+      // this.suzu = 'suzuki';
+
+      // const satoshi = () => {
+      //     console.log(this.suzu);
+      // }
+
+      // const S = {
+      //     suzu: 'SUZUKI',
+      //     satoshi: satoshi,
+      // }
+
+      // S.satoshi(); //suzuki
+      // satoshi(); //suzuki
+
+      //   this.name = "tachsan";
+
+      //   const ryo = function() {
+      //     return this.name;
+      //   };
+      //   //   ryo();
+      //     const yasu = {
+      //       name: "syoyo"
+      //     };
+      //   console.log(ryo.apply(yasu), "apply");
+      //   console.log(ryo.call(yasu), "call");
+      // console.log(ryo.bind(yasu), "bind");
+
+      //   const yuma = () => {
+      //     return this.god;
+      //   };
+
+      //   const G = {
+      //     god: "Oyaidu",
+      //     yuma: yuma
+      //   };
+      //   console.log(G.yuma());
+      //   console.log(yuma.apply(G));
+      //   const E = new Promise((resolve, reject) => {
+      //     setTimeout(function() {
+      //       console.log("Promise");
+      //       resolve();
+      //     }, 1000);
+      //   });
+      //   E.then(() => {
+      //     console.log("Success");
+      //   }).catch(() => {
+      //     console.log("Failed");
+      //   });
+
+      function calculateAge(birthYear) {
+        return 2018 - birthYear;
+      }
+
+      var ageJohn = calculateAge(1990);
+      var ageMike = calculateAge(1948);
+      var ageJane = calculateAge(1969);
+      consoel.log(ageJohn, ageMike, ageJane);
+
+      function yearsUntilRetirement(year, firstNmae) {
+        var age = calculateAge(year);
+        var retirement = 65 - age;
+        console.log(firstNmae + " retires in " + retirement + " years.");
+      }
+
+      yearsUntilRetirement(1990, "John");
+    </script>
+  </body>
+</html>
